@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
 import { TableCell } from "@/components/ui/table";
 import { ReactNode } from "react";
-
+import { format } from "date-fns";
 export default function RowCell({
  type,
  value,
