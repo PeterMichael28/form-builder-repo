@@ -22,14 +22,14 @@ export default function SidebarBtnElement({ formElement }: { formElement: FormEl
       ref={draggable.setNodeRef}
       variant={"outline"}
       className={cn(
-        "flex flex-col gap-2 h-[120px] w-[120px] cursor-grab",
+        "flex flex-col gap-2 h-[110px] md:h-[120px] w-[120px] cursor-grab",
         draggable.isDragging && "ring-2 ring-primary",
       )}
       {...draggable.listeners}
       {...draggable.attributes}
     >
       <Icon className="h-8 w-8 text-primary cursor-grab" />
-      <p className="text-xs">{label}</p>
+      <p className="text-[.7rem] md:text-xs">{label}</p>
     </Button>
   );
 }

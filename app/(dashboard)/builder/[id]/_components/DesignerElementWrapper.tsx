@@ -47,7 +47,7 @@ export default function DesignerElementWrapper({ element }: { element: FormEleme
         ref={draggable.setNodeRef}
         {...draggable.listeners}
         {...draggable.attributes}
-        className="relative h-[120px] flex flex-col text-foreground hover:cursor-pointer rounded-md ring-1 ring-accent ring-inset"
+        className="relative h-[110px] flex flex-col text-foreground hover:cursor-pointer rounded-md ring-1 ring-accent ring-inset"
         onMouseEnter={() => {
           setMouseIsOver(true);
         }}
@@ -72,11 +72,11 @@ export default function DesignerElementWrapper({ element }: { element: FormEleme
                   removeElement(element.id);
                 }}
               >
-                <BiSolidTrash className="h-6 w-6" />
+                <BiSolidTrash className="lg:h-6 lg:w-6 w-4 h-4" />
               </Button>
             </div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-pulse">
-              <p className="text-muted-foreground text-sm">Click for properties or drag to move</p>
+              <p className="text-muted-foreground text-[.7rem] lg:text-sm ">Click for properties or drag to move</p>
             </div>
           </>
         )}

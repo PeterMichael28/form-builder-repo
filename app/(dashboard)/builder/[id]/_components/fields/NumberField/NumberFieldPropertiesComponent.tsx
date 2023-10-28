@@ -76,7 +76,7 @@ export default function NumberFieldPropertiesComponent({ elementInstance }: { el
                   }}
                 />
               </FormControl>
-              <FormDescription>
+              <FormDescription className="text-[.7rem] md:text-sm">
                 The label of the field. <br /> It will be displayed above the field
               </FormDescription>
               <FormMessage />
@@ -97,7 +97,7 @@ export default function NumberFieldPropertiesComponent({ elementInstance }: { el
                   }}
                 />
               </FormControl>
-              <FormDescription>The placeholder of the field.</FormDescription>
+              <FormDescription className="text-[.7rem] md:text-sm">The placeholder of the field.</FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -116,7 +116,7 @@ export default function NumberFieldPropertiesComponent({ elementInstance }: { el
                   }}
                 />
               </FormControl>
-              <FormDescription>
+              <FormDescription className="text-[.7rem] md:text-sm">
                 The helper text of the field. <br />
                 It will be displayed below the field.
               </FormDescription>
@@ -128,10 +128,10 @@ export default function NumberFieldPropertiesComponent({ elementInstance }: { el
           control={form.control}
           name="required"
           render={({ field }) => (
-            <FormItem className="flex items-center justify-between rounded-lg border p-3 shadow-sm">
+            <FormItem className="flex items-center md:flex-row flex-col justify-between rounded-lg border p-3 shadow-sm">
               <div className="space-y-0.5">
                 <FormLabel>Required</FormLabel>
-                <FormDescription>
+                <FormDescription className="text-[.7rem] md:text-sm">
                   The helper text of the field. <br />
                   It will be displayed below the field.
                 </FormDescription>

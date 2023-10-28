@@ -14,9 +14,9 @@ function PropertiesFormSidebar() {
   const PropertiesForm = FormElements[selectedElement?.type].propertiesComponent;
 
   return (
-    <div className="flex flex-col p-2">
+    <div className="flex flex-col p-2 md:text-sm text-[.7rem]">
       <div className="flex justify-between items-center">
-        <p className="text-sm text-foreground/70">Element properties</p>
+        <p className="md:text-sm text-[.7rem] text-foreground/70">Element properties</p>
         <Button
           size={"icon"}
           variant={"ghost"}

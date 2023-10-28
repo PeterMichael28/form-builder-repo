@@ -122,7 +122,7 @@ const Designer = (props: Props) => {
 
           {droppable.isOver && elements.length === 0 &&  (
             <div className="p-4 w-full">
-              <div className="h-[120px] rounded-md bg-primary/20"></div>
+              <div className="h-[110px] rounded-md bg-primary/20"></div>
             </div>
           )}
 
